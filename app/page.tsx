@@ -25,10 +25,22 @@ export default function Home() {
 
         {/* Skills */}
         <div className="mb-8">
-          <h2 className="text-2xl font-semibold mb-2">Skills</h2>
+          <h2 className="text-2xl font-semibold mb-4">Skills</h2>
           <div className="flex flex-wrap gap-3">
-            {["Python", "Excel", "Power BI", "MySQL", "Tableau", "HTML", "CSS", "JavaScript"].map(skill => (
-              <span key={skill} className="bg-gray-800 px-3 py-1 rounded-full text-sm">
+            {[
+              "Python",
+              "SQL",
+              "Power BI",
+              "Excel",
+              "MySQL",
+              "MongoDB",
+              "Data Analysis",
+              "Machine Learning",
+            ].map((skill) => (
+              <span
+                key={skill}
+                className="bg-gray-800 px-3 py-1 rounded-full text-sm"
+              >
                 {skill}
               </span>
             ))}
@@ -36,31 +48,38 @@ export default function Home() {
         </div>
 
         {/* Projects */}
-        <div className="mb-10">
+        <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">Projects</h2>
 
           <div className="grid gap-4 md:grid-cols-2">
 
             <div className="p-4 border border-gray-700 rounded-lg hover:shadow-lg hover:border-white transition">
-              <h3 className="text-lg font-bold">Accident Detection System</h3>
+              <h3 className="text-lg font-bold">Document Management System</h3>
               <p className="text-gray-400 text-sm mt-1">
-                IoT-based system using ESP32, GPS, and sensors to detect accidents and send alerts.
+                Built a secure web application using Node.js, Apache, and MySQL for managing and retrieving documents with role-based access.
               </p>
             </div>
 
             <div className="p-4 border border-gray-700 rounded-lg hover:shadow-lg hover:border-white transition">
-              <h3 className="text-lg font-bold">Data Analysis Dashboard</h3>
+              <h3 className="text-lg font-bold">Smart Railway Toilet System</h3>
               <p className="text-gray-400 text-sm mt-1">
-                Built using Power BI to analyze healthcare dataset and visualize insights.
+                Designed an IoT-based smart sanitation system to monitor and automate cleaning in railway toilets.
+              </p>
+            </div>
+
+            <div className="p-4 border border-gray-700 rounded-lg hover:shadow-lg hover:border-white transition">
+              <h3 className="text-lg font-bold">Accident Detection & Alert System</h3>
+              <p className="text-gray-400 text-sm mt-1">
+                Developed a real-time accident detection system using GSM and GPS for sending emergency alerts with location tracking.
               </p>
             </div>
 
           </div>
-        </div>
+        </section>
 
         {/* Contact */}
         <div>
-          <h2 className="text-2xl font-semibold">Contact</h2>
+          <h2 className="text-2xl font-semibold mb-4">Contact</h2>
 
           <p className="mt-2 text-gray-300">
             Email: mohanrajjkm301@gmail.com
